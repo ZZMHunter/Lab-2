@@ -41,7 +41,9 @@ int main()
         std::cin >> index;
         std::cout << "Input value: ";
         std::cin >> value;
-        myData[index] = value;
+        if (index >=0 && index < 10){
+            myData[index] = value;
+        }
     } while (index < 10 && index >= 0);
     std::cout << "Index out of range. Exit";
     return 0;
