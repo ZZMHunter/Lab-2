@@ -33,7 +33,7 @@ int main()
         //prints out all values in the array
         for (int i = 0; i < 10; i++)
         {
-            std::cout << myData[i] << " ";
+            std::cout << myData[i] << " " << std::endl;
         }
         //takes user inputs for index and value, then sets the array's index to the specified value
         std::cout << "Input index: ";
