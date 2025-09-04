@@ -42,7 +42,7 @@ int main()
         std::cout << "Input value: ";
         std::cin >> value;
         myData[index] = value;
-    } while (index < 10 || index > -1);
+    } while (index < 10 && index >= 0);
     std::cout << "Index out of range. Exit";
     return 0;
 }
