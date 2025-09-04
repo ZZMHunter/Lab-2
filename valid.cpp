@@ -14,15 +14,12 @@ int main()
 {
     //take input x
     int x;
-    std::cout << "Input an integer between 0 and 100: " << std::endl;
-    std::cin >> x;
-    //makes sure input x is within range of 0 and 100
-    if (x > 0 && x < 100)
-    {
-        //squares input x
-        x *= x;
-    }
+    do {
+        std::cout << "Input an integer between 0 and 100: " << std::endl;
+        std::cin >> x;
+        //makes sure input x is within range of 0 and 100 otherwise it will rerun
+    } while ( x <= 0 || x >= 100);
     //returns the squared number
-    std::cout << "The number squared is" + x << std::endl;
+    std::cout << "The number squared is " << x*x;
     return 0;
 }
